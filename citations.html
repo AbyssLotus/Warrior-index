@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Citations — Your Name · AI/ML Portfolio</title>
+  <meta name="description" content="A log of AI tool use across this portfolio, in line with the course's citation policy.">
+  <meta name="theme-color" content="#040a1a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fbe9bd'/%3E%3Cstop offset='1' stop-color='%23d4a53c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='18' fill='%230c1d45'/%3E%3Ccircle cx='32' cy='32' r='13' fill='url(%23g)'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ✏️ Change "YN" to your initials and "Your Name" to your name (same edit on every page) -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav glass" aria-label="Main">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">YN</span>
+          <span class="brand-name">Your Name</span>
+        </a>
+        <button class="menu-btn" type="button" popovertarget="site-menu" aria-label="Menu">
+          <svg class="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <ul class="nav-links" id="site-menu" popover>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="ethics.html">Ethics</a></li>
+          <li><a href="search-reasoning.html">Search &amp; Reasoning</a></li>
+          <li><a href="machine-learning.html">Machine Learning</a></li>
+          <li><a href="generative-ai.html">Generative AI</a></li>
+          <li><a href="citations.html" aria-current="page">AI Citations</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero container">
+      <ol class="breadcrumb reveal" aria-label="Breadcrumb">
+        <li><a href="index.html">Home</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></li>
+        <li aria-current="page">AI Citations</li>
+      </ol>
+
+      <p class="eyebrow reveal" style="--d: 1"><span class="dot"></span>Transparency</p>
+
+      <h1 class="page-title reveal" style="--d: 2">AI Citations</h1>
+      <p class="page-lead reveal" style="--d: 3">A log of AI tool use across this portfolio, in line with the course&rsquo;s citation policy.</p>
+    </section>
+
+    <div class="container panel-stack">
+
+      <!-- ===== Course policy ===== -->
+      <section class="panel glass reveal" style="--d: 4" aria-labelledby="policy-title">
+        <div class="panel-head">
+          <h2 class="panel-title" id="policy-title">Course AI Policy, at a Glance</h2>
+        </div>
+
+        <div class="policy-grid">
+          <div class="tier tier-ok">
+            <h3 class="tier-title"><span class="tier-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>May Use Freely (No Citation)</h3>
+            <ul>
+              <li>Executive functions (time management, task breakdown)</li>
+              <li>Organizing notes from course documents</li>
+              <li>Live captioning course videos</li>
+              <li>Refining search queries</li>
+              <li>Voice control / listening to content</li>
+              <li>Grammar and spelling assistance</li>
+              <li>Feedback on writing or understanding</li>
+            </ul>
+          </div>
+
+          <div class="tier tier-cite">
+            <h3 class="tier-title"><span class="tier-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8.5 9.5h7M8.5 12.5h4"/></svg></span>May Use With Citation</h3>
+            <ul>
+              <li>Generating ideas</li>
+              <li>Editing text beyond spelling/grammar</li>
+              <li>Generating code that is NOT the point of the assignment</li>
+            </ul>
+          </div>
+
+          <div class="tier tier-no">
+            <h3 class="tier-title"><span class="tier-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg></span>Never Allowed (Even Cited)</h3>
+            <ul>
+              <li>Writing assignments</li>
+              <li>Generating code that IS the point of the assignment</li>
+              <li>Summarizing assigned reading</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="policy-note">
+          Citation is required only for the middle column. Uncited AI-generated or AI-assisted content is treated as an
+          academic integrity violation; citing a &ldquo;never allowed&rdquo; use does not make it acceptable.
+        </p>
+      </section>
+
+      <!-- ===== Your statement ===== -->
+      <section class="about glass reveal reveal-on-scroll" aria-labelledby="statement-title">
+        <h2 class="about-label" id="statement-title">My AI Use Statement</h2>
+        <!-- ✏️ Replace with your statement — one <p>…</p> per paragraph -->
+        <p>[Replace this paragraph with a short statement of how and why you used AI tools while building this portfolio and completing coursework.]</p>
+      </section>
+
+      <!-- ===== Format 1: single-use citations ===== -->
+      <section class="panel glass reveal reveal-on-scroll" aria-labelledby="single-title">
+        <div class="panel-head">
+          <span class="format-tag">Format 1</span>
+          <h2 class="panel-title" id="single-title">Single-Use Citations</h2>
+          <p class="panel-sub">Use for a single, discrete request &mdash; one prompt, one response, no back-and-forth revision.</p>
+          <p class="pattern">
+            <span class="pattern-label">Pattern</span>
+            <code>"The prompt in its entirety." ToolName (year). Version and [type]. URL</code>
+          </p>
+        </div>
+
+        <figure class="example">
+          <figcaption>Example (from policy)</figcaption>
+          <p>&ldquo;Write a tip calculator in Python.&rdquo; OpenAI. (2024). ChatGPT (May 12, 2024 version) [Large language model]. https://chat.openai.com/chat</p>
+        </figure>
+
+        <!-- ✏️ ADD A CITATION: copy this whole <article>…</article> block and paste it right below -->
+        <article class="entry">
+          <dl class="entry-fields">
+            <div>
+              <dt>Citation</dt>
+              <dd>[&ldquo;Full prompt text.&rdquo; ToolName. (Year). Version [type]. URL]</dd>
+            </div>
+            <div>
+              <dt>Related Outcome(s)</dt>
+              <dd>[e.g. Outcome 5]</dd>
+            </div>
+          </dl>
+        </article>
+      </section>
+
+      <!-- ===== Format 2: collaboration log ===== -->
+      <section class="panel glass reveal reveal-on-scroll" aria-labelledby="log-title">
+        <div class="panel-head">
+          <span class="format-tag">Format 2</span>
+          <h2 class="panel-title" id="log-title">AI Collaboration Log</h2>
+          <p class="panel-sub">
+            Use when your AI use involved multiple exchanges, revisions, or shaped your work iteratively. Attach a
+            transcript &mdash; a shareable link is preferred; an exported PDF/text file or full screen capture/copy-paste
+            is acceptable if a link isn&rsquo;t available. Entries without transcript evidence will not receive credit.
+          </p>
+        </div>
+
+        <!-- ✏️ ADD A SESSION: copy this whole <article>…</article> block and paste it right below.
+             For a transcript link, use <a href="https://…">View transcript</a> -->
+        <article class="entry">
+          <dl class="entry-fields">
+            <div>
+              <dt>Tool</dt>
+              <dd>CloudeCode Opus5.5</dd>
+            </div>
+            <div>
+              <dt>Date of use</dt>
+              <dd>9.23.2026</dd>
+            </div>
+            <div>
+              <dt>Purpose</dt>
+              <dd>to build this website fully with a functional and pleasing layout.</dd>
+            </div>
+            <div>
+              <dt>AI&rsquo;s contribution</dt>
+              <dd>fully building out the website with HTML and stylesheets.</dd>
+            </div>
+            <div>
+              <dt>Human contributions</dt>
+              <dd>I provided a direction as well as design language specifications to the AI as well as made sure all pages where in order. It failed to generate a Citation page and I told it too fix that mishap.</dd>
+            </div>
+            <div>
+              <dt>Transcript</dt>
+              <dd><a href="transcript.html">Full AI collaboration transcript</a></dd>
+            </div>
+          </dl>
+        </article>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Your Name &middot; AI/ML Portfolio</p>
+      <a class="to-top" href="#top">Back to top <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+    </div>
+  </footer>
+</body>
+</html>
