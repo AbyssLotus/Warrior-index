@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name — AI/ML Portfolio</title>
+  <meta name="description" content="AI/ML portfolio: about me and evidence for five course learning outcomes.">
+  <meta name="theme-color" content="#040a1a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fbe9bd'/%3E%3Cstop offset='1' stop-color='%23d4a53c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='18' fill='%230c1d45'/%3E%3Ccircle cx='32' cy='32' r='13' fill='url(%23g)'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ✏️ Change "YN" to your initials and "Your Name" to your name (same edit on every page) -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav glass" aria-label="Main">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">YN</span>
+          <span class="brand-name">Your Name</span>
+        </a>
+        <button class="menu-btn" type="button" popovertarget="site-menu" aria-label="Menu">
+          <svg class="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <ul class="nav-links" id="site-menu" popover>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="ethics.html">Ethics</a></li>
+          <li><a href="search-reasoning.html">Search &amp; Reasoning</a></li>
+          <li><a href="machine-learning.html">Machine Learning</a></li>
+          <li><a href="generative-ai.html">Generative AI</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== Hero / About Me ===== -->
+    <section class="hero container">
+      <div class="hero-text">
+        <p class="eyebrow reveal"><span class="dot"></span>AI/ML Portfolio</p>
+
+        <!-- ✏️ Your name and major -->
+        <h1 class="hero-title reveal" style="--d: 1">Hi, I&rsquo;m <span class="text-gold">Your Name</span>.</h1>
+        <p class="hero-sub reveal" style="--d: 2">Your Major</p>
+
+        <div class="about glass reveal" style="--d: 3">
+          <h2 class="about-label">About Me</h2>
+          <!-- ✏️ PASTE YOUR ABOUT ME TEXT HERE — one <p>…</p> per paragraph -->
+          <p>[Paste your About Me text here. This card grows to fit whatever you write, so use as many paragraphs as you need.]</p>
+          <p>[Each paragraph goes inside its own &lt;p&gt; tag, like this one.]</p>
+        </div>
+
+        <div class="hero-actions reveal" style="--d: 4">
+          <a class="btn btn-gold" href="#outcomes">Explore my outcomes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+          <a class="btn btn-glass" href="history.html">Start with Outcome 1 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="hero-media reveal" style="--d: 2">
+        <!-- ✏️ PHOTO: put your image in the images/ folder and change src below (e.g. images/me.jpg) -->
+        <figure class="avatar">
+          <img src="images/avatar-placeholder.svg" alt="Portrait of Your Name" width="400" height="400">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== Outcome cards ===== -->
+    <section class="section container" id="outcomes" aria-labelledby="outcomes-title">
+      <div class="section-head">
+        <p class="eyebrow"><span class="dot"></span>Course Objectives</p>
+        <h2 class="section-title" id="outcomes-title">Learning Outcomes</h2>
+        <p class="section-sub">Five outcomes, each with its own page. Evidence for each one is on the way.</p>
+      </div>
+
+      <div class="card-grid">
+        <a class="card glass reveal reveal-on-scroll" href="history.html" style="--d: 5">
+          <span class="card-bignum" aria-hidden="true">01</span>
+          <span class="card-kicker">Outcome 01</span>
+          <h3 class="card-title">History</h3>
+          <p class="card-text">Explain key moments in the historical development of AI and ML and relate them to modern AI systems.</p>
+          <span class="card-foot">
+            <span class="status"><span class="status-dot"></span>Evidence coming soon</span>
+            <span class="icon-circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </span>
+        </a>
+
+        <a class="card glass reveal reveal-on-scroll" href="ethics.html" style="--d: 6">
+          <span class="card-bignum" aria-hidden="true">02</span>
+          <span class="card-kicker">Outcome 02</span>
+          <h3 class="card-title">Ethics</h3>
+          <p class="card-text">Identify and discuss ethical issues associated with AI and ML and their societal implications.</p>
+          <span class="card-foot">
+            <span class="status"><span class="status-dot"></span>Evidence coming soon</span>
+            <span class="icon-circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </span>
+        </a>
+
+        <a class="card glass reveal reveal-on-scroll" href="search-reasoning.html" style="--d: 7">
+          <span class="card-bignum" aria-hidden="true">03</span>
+          <span class="card-kicker">Outcome 03</span>
+          <h3 class="card-title">Search &amp; Reasoning</h3>
+          <p class="card-text">Describe how core AI techniques such as search and adversarial reasoning are used to model intelligent behavior.</p>
+          <span class="card-foot">
+            <span class="status"><span class="status-dot"></span>Evidence coming soon</span>
+            <span class="icon-circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </span>
+        </a>
+
+        <a class="card glass reveal reveal-on-scroll" href="machine-learning.html" style="--d: 8">
+          <span class="card-bignum" aria-hidden="true">04</span>
+          <span class="card-kicker">Outcome 04</span>
+          <h3 class="card-title">Machine Learning</h3>
+          <p class="card-text">Explain fundamental machine learning approaches and distinguish between major learning paradigms.</p>
+          <span class="card-foot">
+            <span class="status"><span class="status-dot"></span>Evidence coming soon</span>
+            <span class="icon-circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </span>
+        </a>
+
+        <a class="card glass reveal reveal-on-scroll" href="generative-ai.html" style="--d: 9">
+          <span class="card-bignum" aria-hidden="true">05</span>
+          <span class="card-kicker">Outcome 05</span>
+          <h3 class="card-title">Generative AI</h3>
+          <p class="card-text">Describe how generative AI and large language models operate at a conceptual level and evaluate their appropriate use.</p>
+          <span class="card-foot">
+            <span class="status"><span class="status-dot"></span>Evidence coming soon</span>
+            <span class="icon-circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Your Name &middot; AI/ML Portfolio</p>
+      <a class="to-top" href="#top">Back to top <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+    </div>
+  </footer>
+</body>
+</html>
