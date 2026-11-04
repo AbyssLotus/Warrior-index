@@ -56,10 +56,15 @@
     <section class="container" aria-labelledby="evidence-title">
       <!-- ✏️ EVIDENCE: replace the contents of this panel when your evidence is ready -->
       <div class="evidence glass reveal" style="--d: 3">
-        <div class="evidence-inner">
-          <span class="evidence-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12M6 21h12M7 3c0 5 5 6 5 9s-5 4-5 9M17 3c0 5-5 6-5 9s5 4 5 9"/></svg></span>
-          <h2 class="evidence-title" id="evidence-title">Evidence coming soon</h2>
-        </div>
+        <h2>History of Artificial Intelligence</h2> 
+        <h3> The Limits of Hand-Written Rules </h3>
+        <p>Early artificial intelligence was built on the idea that human thought could be reduced to clear, logical statements. If experts could write down enough rules, a computer could reason through any problem by following the chain of logic. This approach drove the creation of expert systems, which used large collections of if-then statements to give advice.</p>
+        <br>
+        <p>While this worked well for narrow tasks, it eventually collapsed. As problems grew, the number of possible rule interactions grew so fast that computers could not keep up. Worse, human knowledge is full of exceptions. Programmers found it impossible to write down every real-world detail needed for a rule to work correctly. When these systems broke down in practice, funding dried up, leading to the industry downturn known as an AI winter.</p>
+        <h3> Case Study: The Stanford MYCIN System </h3>
+        <p>MYCIN was an early medical expert system built at Stanford to diagnose bacterial blood infections and recommend antibiotics. Because medical tests carry natural uncertainty, the system could not rely on pure true-or-false logic. To handle ambiguity, the designers created certainty factors, which tracked how strongly clinical evidence supported or weakened a diagnosis. In blind evaluation tests, MYCIN actually suggested better treatments than medical faculty members.</p>
+        <br>
+        <p>Despite this technical success, hospitals never adopted it. First, it created severe practical friction. Because hospital records were not yet digitized, doctors had to spend a large portion of an hour typing raw lab numbers into a terminal for a single patient. Second, the system possessed zero common sense. It only understood the narrow medical rules in its database. If a user entered test values for an animal or an inanimate object, MYCIN would treat it like a human patient and recommend lethal doses of medication. It had no basic concept of biology outside its explicit lines of code.</p>
       </div>
     </section>
 
