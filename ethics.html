@@ -55,22 +55,32 @@
 
     <section class="container" aria-labelledby="evidence-title">
       <!-- ✏️ EVIDENCE: replace the contents of this panel when your evidence is ready -->
-      <div class="ethics glass reveal" style="--d: 3">
-        <h2>Algorithmic Ethics, Bias, and System Safety</h2><br>
-        <h3>The Math Behind Competing Definitions of Fairness</h3><br>
-        <p>Turning fairness into code is difficult because different mathematical definitions of fairness clash with each other. Unless two groups have the exact same baseline rate for an outcome, a model cannot treat them equally across every metric. It cannot keep accuracy, false alarms, and missed catches balanced at the same time. Fixing the math for one of these rules will always throw another one off.</p><br>
-        <h3>Case Study: COMPAS Recidivism Scores and Courtroom Due Process</h3><br>
-        <p>An investigative audit by ProPublica analyzed these scores and demonstrated that the tool treated defendants differently based on race. The developers defended their software by showing that it followed calibration, meaning that any given score represented the exact same likelihood of reoffending regardless of a defendant's race. However, because historical arrest rates were unequal due to policing patterns, the mathematics guaranteed that keeping the scores calibrated forced the tool to generate unequal error rates between groups.</p><br>
-        <p>The legal challenge reached the Wisconsin Supreme Court in State v. Loomis. The court ruled that judges could continue using COMPAS scores during sentencing hearings even though the private company refused to reveal its proprietary formulas under trade-secret laws.</p><br>
-        <p>Right now, nobody takes full blame when these tools make mistakes. The software company avoids responsibility by calling the score an advisory suggestion, while judges avoid blame by claiming the score was just one factor among many. If this setup changed even slightly—like requiring judges to follow the score automatically—the court would take full blame for removing human judgment. On the other hand, if courts switched to open-source models, independent data scientists could inspect the code and be held accountable. Moving forward, courts need to take clear steps: stop using secret algorithms in sentencing, require third-party bias testing before buying any software, and give defense lawyers a clear way to inspect the data and challenge bad scores.</p><br>
-     <br> <h3>Key Finding</h3><br>
+      <div class="evidence glass reveal" style="--d: 3">
+        <h2>Algorithmic Ethics, Bias, and System Safety</h2> <br>
+        <h3> The Problem of Conflicting Fairness </h3> <br>
+        <p>Turning fairness into code is difficult because different mathematical definitions of fairness directly clash with each other. Unless two groups have the exact same baseline rate for an outcome, a computer model cannot treat them equally across every measure. It is mathematically impossible to keep accuracy, false alarms, and missed catches balanced at the same time. Fixing the math to satisfy one fairness rule will always push another rule out of balance, forcing engineers to make a moral choice about which mistakes are acceptable.</p>
+        <br>
+        <h3> Case Study: COMPAS Recidivism Scores and Courtroom Due Process </h3> <br>
+        <p>The COMPAS tool is a commercial risk-assessment test used in criminal courts to help judges decide bail, prison sentences, and parole. It asks an offender a series of background questions and produces a score predicting how likely they are to commit another crime. While race is not an explicit question, items about neighborhood crime rates and family arrest history act as indirect demographic proxies, biasing the scores against minority defendants.</p>
+        <br>
+        <p>An investigative audit by ProPublica analyzed these scores and found severe racial disparities in how the software made mistakes. Among defendants who never committed another crime over a two-year tracking window, Black defendants were falsely flagged as high risk at roughly twice the rate of white defendants. Conversely, white defendants who did commit new crimes were mislabeled as low risk at roughly double the rate of Black reoffenders. The company defended the tool by showing that a given score carried the exact same statistical probability of re-arrest across all races. However, because historical arrest rates were unequal due to policing patterns, keeping the scores calibrated mathematically forced the false-alarm rate to swing heavily against Black defendants.</p>
+        <br>
+        <p>In State v. Loomis, the Wisconsin Supreme Court ruled that judges could continue using COMPAS scores during sentencing even though the company kept its formulas secret under trade-secret laws. This established a troubling precedent: closed, uninspectable algorithms can influence a person's freedom without granting the defense a way to challenge the math used against them.</p>
+        <br>
+        <h3> Responsibility and Next Steps </h3> <br>
+        <p>Right now, nobody takes full blame when these tools make mistakes. The software company avoids responsibility by calling the score an advisory suggestion, while judges avoid blame by claiming the score was just one factor among many. If this setup changed even slightly—like requiring judges to follow the score automatically—the court would take full blame for removing human judgment. On the other hand, if courts switched to open-source models, independent data scientists could inspect the code and be held accountable. Moving forward, courts need to take clear steps: stop using secret algorithms in sentencing, require third-party bias testing before buying any software, and give defense lawyers a clear way to inspect the data and challenge bad scores.</p>
+        <br>
+        <h3> Key Discussion Findings </h3> <br>
         <ul>
-          <li>Proxy Bias: Questions regarding family history and neighborhood crime act as indirect demographic proxies, biasing scores against minority defendants even without an explicit race variable.</li>
-          </ul>
-        <br> <h3>Citation</h3><br>
+          <li><strong>Proxy Bias:</strong> Background questions about family arrest history and neighborhood crime act as demographic proxies, biasing scores against minority defendants even without an explicit race variable.</li>
+          <li><strong>Conflicting Fairness Rules:</strong> A model cannot maintain equal accuracy and equal false-alarm rates at the same time when historical baseline arrest rates between groups are unequal.</li>
+       </ul>
+        <br> <h3>Citations</h3><br>
         <ul>
-          <li>Angwin, J., Larson, J., Mattu, S., & Kirchner, L. Machine Bias: There’s software used across the country to predict future criminals. And it’s biased against blacks. ProPublica.</li>
-          </ul>
+          <li>Angwin, J., Larson, J., Mattu, S., &amp; Kirchner, L. Machine Bias: There’s software used across the country to predict future criminals. And it’s biased against blacks. ProPublica.</li>
+          <li>Kleinberg, J., Mullainathan, S., &amp; Raghavan, M. Inherent Trade-Offs in the Fair Determination of Risk Scores. Innovations in Theoretical Computer Science.</li>
+          <li>Wisconsin Supreme Court. State v. Loomis. Official Court Ruling.</li>
+        </ul>
       </div>
     </section>
 
