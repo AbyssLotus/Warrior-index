@@ -56,10 +56,15 @@
     <section class="container" aria-labelledby="evidence-title">
       <!-- ✏️ EVIDENCE: replace the contents of this panel when your evidence is ready -->
       <div class="evidence glass reveal" style="--d: 3">
-        <div class="evidence-inner">
-          <span class="evidence-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12M6 21h12M7 3c0 5 5 6 5 9s-5 4-5 9M17 3c0 5-5 6-5 9s5 4 5 9"/></svg></span>
-          <h2 class="evidence-title" id="evidence-title">Evidence coming soon</h2>
-        </div>
+
+        <h2>Search Algorithms and Deterministic Reasoning</h2> <br>
+        <h3>Planning Through State Spaces</h3><br>
+        <p>Search algorithms find solutions by testing paths through possible actions. Uninformed methods check paths blindly, which quickly exhausts system memory on complex problems. Informed search solves this by using a heuristic—an educated guess about how far a state is from the goal. If that estimate never overstates the actual distance, the algorithm is guaranteed to find the optimal path without wasting time checking bad options.</p> <br>
+        <h3>Case Study: In-Vehicle GPS Navigation and A*</h3> <br>
+        <p>Modern road networks contain millions of intersections and connecting streets. If an in-car navigation system used blind search to calculate a trip across the country, the dashboard computer would run out of memory and take far too long to deliver a route.</p><br>
+        <p>Navigation engines solve this by using the A* algorithm. The algorithm prioritizes which roads to explore using an admissible heuristic: the straight-line physical distance to the destination divided by the maximum legal highway speed limit. Because an automobile cannot travel faster than a direct line at top speed, this formula never overestimates the remaining travel time. This mathematical guarantee allows A* to prune away roads heading in the wrong direction and lock onto the fastest path without evaluating every side street.</p><br>
+        <p>Despite this efficiency, real-world navigation highlights the limits of static map models. Standard A* evaluates routes based purely on distance and speed limits. It has no built-in awareness of unmapped conditions, low-hanging obstacles, or vehicle dimensions. This blind spot is why GPS apps regularly route commercial delivery trucks under low-clearance bridges or down narrow residential lanes. The algorithm finds the mathematically optimal route on paper, but the vehicle gets stuck because the software's state space does not represent the physical height and width of the truck.</p><br>
+            
       </div>
     </section>
 
