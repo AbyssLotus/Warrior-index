@@ -56,14 +56,21 @@
     <section class="container" aria-labelledby="evidence-title">
       <!-- ✏️ EVIDENCE: replace the contents of this panel when your evidence is ready -->
       <div class="ethics glass reveal" style="--d: 3">
-        <div class="ethics-inner" style="margin-top: 8px;">
-          <p> a short opening discussing the complicated ethics and ways in which responsibility falls within AI and machine learning as a field</p>
-          <ul>
-            <li>The ethical implications of rotton training data, who it might effect, and how companies who made the Ai -- and those that use it -- should react, in addition to what messerues need to be taken.</li>
-            <li>What Proxy data is, how it effects groups or people it is used to discriminate against, where responsibility falls, and what measueres said responsible parties should take.</li>
-            <li>Ethics concerning data privacy in regards to how massive amounts of data can quickly be processed at high speed, as well as ethical handling of such data localy and over large databases.</li>
+        <h2>Algorithmic Ethics, Bias, and System Safety</h2><br>
+        <h3>The Math Behind Competing Definitions of Fairness</h3><br>
+        <p>Turning fairness into code is difficult because different mathematical definitions of fairness clash with each other. Unless two groups have the exact same baseline rate for an outcome, a model cannot treat them equally across every metric. It cannot keep accuracy, false alarms, and missed catches balanced at the same time. Fixing the math for one of these rules will always throw another one off.</p><br>
+        <h3>Case Study: COMPAS Recidivism Scores and Courtroom Due Process</h3><br>
+        <p>An investigative audit by ProPublica analyzed these scores and demonstrated that the tool treated defendants differently based on race. The developers defended their software by showing that it followed calibration, meaning that any given score represented the exact same likelihood of reoffending regardless of a defendant's race. However, because historical arrest rates were unequal due to policing patterns, the mathematics guaranteed that keeping the scores calibrated forced the tool to generate unequal error rates between groups.</p><br>
+        <p>The legal challenge reached the Wisconsin Supreme Court in State v. Loomis. The court ruled that judges could continue using COMPAS scores during sentencing hearings even though the private company refused to reveal its proprietary formulas under trade-secret laws.</p><br>
+        <p>Right now, nobody takes full blame when these tools make mistakes. The software company avoids responsibility by calling the score an advisory suggestion, while judges avoid blame by claiming the score was just one factor among many. If this setup changed even slightly—like requiring judges to follow the score automatically—the court would take full blame for removing human judgment. On the other hand, if courts switched to open-source models, independent data scientists could inspect the code and be held accountable. Moving forward, courts need to take clear steps: stop using secret algorithms in sentencing, require third-party bias testing before buying any software, and give defense lawyers a clear way to inspect the data and challenge bad scores.</p><br>
+     <br> <h3>Key Finding</h3><br>
+        <ul>
+          <li>Proxy Bias: Questions regarding family history and neighborhood crime act as indirect demographic proxies, biasing scores against minority defendants even without an explicit race variable.</li>
           </ul>
-        </div>
+        <br> <h3>Citation</h3><br>
+        <ul>
+          <li>Angwin, J., Larson, J., Mattu, S., & Kirchner, L. Machine Bias: There’s software used across the country to predict future criminals. And it’s biased against blacks. ProPublica.</li>
+          </ul>
       </div>
     </section>
 
