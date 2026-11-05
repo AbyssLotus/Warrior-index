@@ -55,22 +55,29 @@
 
     <section class="container" aria-labelledby="evidence-title">
       <!-- ✏️ EVIDENCE: replace the contents of this panel when your evidence is ready -->
-      <div class="evidence glass reveal" style="--d: 3">
-        <h2>History of Artificial Intelligence</h2> <br>
-        <h3> The Limits of Hand-Written Rules </h3> <br>
-        <p>Early artificial intelligence was built on the idea that human thought could be reduced to clear, logical statements. If experts could write down enough rules, a computer could reason through any problem by following the chain of logic. This approach drove the creation of expert systems, which used large collections of if-then statements to give advice.</p>
-        <br>
-        <p>While this worked well for narrow tasks, it eventually collapsed. As problems grew, the number of possible rule interactions grew so fast that computers could not keep up. Worse, human knowledge is full of exceptions. Programmers found it impossible to write down every real-world detail needed for a rule to work correctly. When these systems broke down in practice, funding dried up, leading to the industry downturn known as an AI winter.</p>
-        <br> <h3> Case Study: The Stanford MYCIN System </h3> <br>
-        <p>MYCIN was an early medical expert system built at Stanford to diagnose bacterial blood infections and recommend antibiotics. Because medical tests carry natural uncertainty, the system could not rely on pure true-or-false logic. To handle ambiguity, the designers created certainty factors, which tracked how strongly clinical evidence supported or weakened a diagnosis. In blind evaluation tests, MYCIN actually suggested better treatments than medical faculty members.</p>
-        <br>
-        <p>Despite this technical success, hospitals never adopted it. First, it created severe practical friction. Because hospital records were not yet digitized, doctors had to spend a large portion of an hour typing raw lab numbers into a terminal for a single patient. Second, the system possessed zero common sense. It only understood the narrow medical rules in its database. If a user entered test values for an animal or an inanimate object, MYCIN would treat it like a human patient and recommend lethal doses of medication. It had no basic concept of biology outside its explicit lines of code.</p>
-     <br> <h3>Citation</h3><br>
-        <ul>
-          <li>Shortliffe, E. H. Computer-Based Medical Consultations: MYCIN. Elsevier/North-Holland.</li>
-          </ul>
-      </div>
-    </section>
+      ```
+  <div class="evidence glass reveal" style="--d: 3">
+    <h2>History of Artificial Intelligence</h2> <br>
+    <h3> From Hand-Written Rules to Machine Learning </h3> <br>
+    <p>Early artificial intelligence focused on symbolic reasoning, assuming human thought could be captured through explicit if-then statements. Expert systems relied on human specialists to write out every fact and rule by hand. While this worked for narrow puzzles, it quickly collapsed. Human knowledge has too many exceptions to write down manually, and the sheer number of interacting rules overwhelmed computers, leading to a major industry downturn known as the AI winter.</p>
+    <br>
+    <p>To break through this wall, researchers shifted the paradigm from symbolic logic to statistical machine learning. Instead of engineers coding every rule by hand, algorithms were designed to analyze large datasets and discover patterns on their own. This shift from hand-crafted rules to data-driven learning laid the foundation for modern neural networks.</p>
+    <br> <h3> Case Study: The Stanford MYCIN System </h3> <br>
+    <p>MYCIN was an early medical expert system built at Stanford to diagnose bacterial blood infections and prescribe antibiotics. Because medical tests carry natural uncertainty, the designers created certainty factors to score how strongly test results supported a diagnosis. In blind trials, MYCIN actually suggested better treatments than medical faculty members.</p>
+    <br>
+    <p>Despite its performance, hospitals never adopted it. Doctors did not want to spend a large portion of an hour manually typing lab numbers into an offline terminal. More importantly, the system had zero common sense outside its narrow rule list. If a user entered test numbers for an animal or an inanimate object, MYCIN would treat it like a human patient and prescribe lethal doses of antibiotics.</p>
+    <br> <h3> Connection to Modern AI Systems </h3> <br>
+    <p>Modern AI systems, such as large language models and diagnostic image classifiers, solved the exact knowledge bottleneck that stopped MYCIN. Instead of relying on humans to hand-code medical logic, modern models train on millions of text records and clinical images to learn medical patterns automatically.</p>
+    <br>
+    <p>However, modern systems still inherit MYCIN's fundamental blind spot. Because they learn through statistical patterns rather than genuine world understanding, modern models still lack true common sense. Just as MYCIN gave confident antibiotic advice for an inanimate object, modern systems can hallucinate false facts or misread images when faced with inputs outside their training data.</p>
+    <br> <h3>Citation</h3><br>
+    <ul>
+      <li>Shortliffe, E. H. Computer-Based Medical Consultations: MYCIN. Elsevier/North-Holland.</li>
+    </ul>
+  </div>
+</section>
+
+```
 
     <nav class="pager container" aria-label="Outcome pages">
       <a class="pager-link prev glass reveal" style="--d: 4" href="index.html">
