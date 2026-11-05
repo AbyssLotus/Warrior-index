@@ -56,15 +56,23 @@
     <section class="container" aria-labelledby="evidence-title">
       <!-- ✏️ EVIDENCE: replace the contents of this panel when your evidence is ready -->
       <div class="evidence glass reveal" style="--d: 3">
-
-        <h2>Search Algorithms and Deterministic Reasoning</h2> <br>
-        <h3>Planning Through State Spaces</h3><br>
-        <p>Search algorithms find solutions by testing paths through possible actions. Uninformed methods check paths blindly, which quickly exhausts system memory on complex problems. Informed search solves this by using a heuristic—an educated guess about how far a state is from the goal. If that estimate never overstates the actual distance, the algorithm is guaranteed to find the optimal path without wasting time checking bad options.</p> <br>
-        <h3>Case Study: In-Vehicle GPS Navigation and A*</h3> <br>
-        <p>Modern road networks contain millions of intersections and connecting streets. If an in-car navigation system used blind search to calculate a trip across the country, the dashboard computer would run out of memory and take far too long to deliver a route.</p><br>
-        <p>Navigation engines solve this by using the A* algorithm. The algorithm prioritizes which roads to explore using an admissible heuristic: the straight-line physical distance to the destination divided by the maximum legal highway speed limit. Because an automobile cannot travel faster than a direct line at top speed, this formula never overestimates the remaining travel time. This mathematical guarantee allows A* to prune away roads heading in the wrong direction and lock onto the fastest path without evaluating every side street.</p><br>
-        <p>Despite this efficiency, real-world navigation highlights the limits of static map models. Standard A* evaluates routes based purely on distance and speed limits. It has no built-in awareness of unmapped conditions, low-hanging obstacles, or vehicle dimensions. This blind spot is why GPS apps regularly route commercial delivery trucks under low-clearance bridges or down narrow residential lanes. The algorithm finds the mathematically optimal route on paper, but the vehicle gets stuck because the software's state space does not represent the physical height and width of the truck.</p><br>
-            
+        <h2>Search Algorithms and Adversarial Reasoning</h2> <br>
+        <h3> Modeling Intelligent Decisions </h3> <br>
+        <p>Search algorithms model intelligent behavior by testing sequences of actions across multiple states to reach a goal. BFS checks every path blindly, which quickly runs out of memory on large problems. Informed searchs such as A* solves this by using a heuristic, an educated guess of the remaining distance to the goal. In a algorithm like A*, an admissible heuristic never overestimates the true cost, allowing the system to ignore dead ends and guarantee the optimal route.</p>
+        <br>
+        <p>When an environment includes a competitor, AI models intelligent behavior through adversarial reasoning using techniques like Minimax and alpha-beta pruning. Instead of assuming the world is static, the agent assumes the opponent will always make the smartest possible counter-move. It searches the game tree to pick moves that guarantee the best outcome regardless of how the opponent responds, pruning away branches that an intelligent adversary would never allow.</p>
+        <br>
+        <h3> Case Study: In-Vehicle GPS Navigation and A* </h3> <br>
+        <p>Modern road networks contain millions of intersections and connecting streets. If a GPS navigation system used blind search to calculate a cross-country trip, the dashboard computer would run out of memory and take far too long to deliver a route.</p>
+        <br>
+        <p>Routing engines solve this using the A* algorithm. The software evaluates possible roads using an admissible heuristic: the straight-line physical distance to the destination divided by the maximum legal highway speed limit. Because a car cannot travel faster than a direct line at top speed, this formula never overestimates the remaining travel time. This mathematical guarantee allows A* to prune away roads heading in the wrong direction and lock onto the fastest path without evaluating every side street.</p>
+        <br>
+        <p>Despite this efficiency, real-world navigation highlights the limits of static search models. Standard A* evaluates routes based purely on mapped distance and speed limits. It has no built-in awareness of unmapped conditions, sudden road hazards, or vehicle dimensions. This blind spot is why GPS apps regularly route commercial delivery trucks under low-clearance bridges or down narrow residential lanes. The algorithm finds the mathematically optimal route on paper, but the vehicle gets stuck because the software's state space does not represent the physical height and width of the truck.</p>
+        <br> <h3>Citations</h3><br>
+        <ul>
+          <li>Hart, P. E., Nilsson, N. J., &amp; Raphael, B. A Formal Basis for the Heuristic Determination of Minimum Cost Paths. IEEE Transactions on Systems Science and Cybernetics.</li>
+          <li>Russell, S., &amp; Norvig, P. Artificial Intelligence: A Modern Approach. Pearson.</li>
+        </ul>
       </div>
     </section>
 
